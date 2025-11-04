@@ -1,0 +1,50 @@
+body{
+    overflow-x: hidden; 
+    /* prevent horizontal scrolling */
+}
+#bg1{
+    background-image: url('https://t3.ftcdn.net/jpg/02/08/75/34/360_F_208753444_wxbyQdNk3HptqXepy0bW32KUvqh1jZ7V.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+}
+
+#bg2{
+    background-image: url('https://t3.ftcdn.net/jpg/02/08/75/34/360_F_208753444_wxbyQdNk3HptqXepy0bW32KUvqh1jZ7V.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+}
+
+/* Media Queries for mobile responsive */
+
+@media (max-width:768px){
+    .row{
+        flex-direction: column; 
+        /* Stack columns vertically */
+    }
+    .col-4, .col-6, .col-3{
+        width: 100%;
+        /* Full width for mobile */
+        margin-bottom: 20px;
+        /* Spaces between stacked columns */
+    }
+    img{
+        width: 100%;
+        /* Responsive images */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+    .box{
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+    h3, h4{
+        font-size: 1.5em;
+        /* Adjust font size for headings */
+    }
+}
