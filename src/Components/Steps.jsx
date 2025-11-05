@@ -255,10 +255,7 @@ const renderStepContent = (step)=>{
 const handleAddResume=async()=>{
   // alert("api called")
   const{name,jobTitle,location}=userInput.personalDetails
-if (!validateStep(5)) {
-    swal("Warning", "Please complete the summary before submitting", "warning");
-    return;
-  }
+
   if(name && jobTitle && location){
     // alert("API call")
    try{

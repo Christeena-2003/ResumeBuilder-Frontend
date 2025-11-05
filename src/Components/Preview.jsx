@@ -14,7 +14,7 @@ import { addDownloadHistoryAPI } from '../services/allAPI';
 
 function Preview({userInput,finish,resumeId,setUserInput}) {
   const[downloadStatus,setDownloadStatus]=useState(false)
-  console.log(userInput);
+  //console.log(userInput);
   const downloadCV=async()=>{
     // getElement for screenshot
     const input = document.getElementById('result')
